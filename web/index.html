@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Student Desk · CHRIST</title>
+  <meta name="description" content="Find grounded answers in the Christite Handbook and Academic Calendar.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="rail" aria-label="Student Desk information">
+      <a class="brand" href="/" aria-label="Student Desk home">
+        <div class="brand-mark" aria-hidden="true"><span>✣</span></div>
+        <div><strong>CHRIST</strong><small>STUDENT DESK</small></div>
+      </a>
+      <div class="rail-rule"></div>
+      <p class="rail-kicker">ACADEMIC YEAR 2026 / 27</p>
+      <h2>Find your<br><em>next step.</em></h2>
+      <p class="rail-intro">A quieter way to navigate the handbook and academic calendar.</p>
+      <div class="rail-bottom">
+        <div class="rail-document"><span class="document-symbol">01</span><div><b>Christite Handbook</b><small>Policies, services & student life</small></div></div>
+        <div class="rail-document"><span class="document-symbol">02</span><div><b>Academic Calendar</b><small>Dates, classes & examinations</small></div></div>
+        <p class="rail-note">Answers are grounded in the supplied documents. Confirm consequential decisions with the university.</p>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="mobile-brand">CHRIST <span>/ STUDENT DESK</span></div><div class="topbar-right"><span class="status-dot" id="status-dot"></span><span id="status-label">Checking local models</span><button id="new-chat" type="button">New conversation <span aria-hidden="true">↗</span></button></div></header>
+      <div class="conversation" id="conversation" aria-live="polite">
+        <section class="welcome" id="welcome">
+          <div class="eyebrow"><span class="eyebrow-line"></span> YOUR CAMPUS COMPANION</div>
+          <h1>What would you like<br>to <em>know?</em></h1>
+          <p>Ask about academic dates, assessments, library access, scholarships, or student services. Every answer points back to a source page.</p>
+          <div class="suggestions" aria-label="Suggested questions">
+            <button class="suggestion" data-question="What are the library opening hours?" type="button"><span class="suggestion-index">01 / LIBRARY</span><span>What are the library opening hours?</span><span class="arrow" aria-hidden="true">↗</span></button>
+            <button class="suggestion" data-question="What is the assessment and promotion policy for UG programmes?" type="button"><span class="suggestion-index">02 / ACADEMICS</span><span>How does assessment work for UG programmes?</span><span class="arrow" aria-hidden="true">↗</span></button>
+            <button class="suggestion" data-question="When are the mid-semester examinations in August 2026?" type="button"><span class="suggestion-index">03 / CALENDAR</span><span>When are the August mid-semester exams?</span><span class="arrow" aria-hidden="true">↗</span></button>
+            <button class="suggestion" data-question="How do I apply for a fee concession or scholarship?" type="button"><span class="suggestion-index">04 / SUPPORT</span><span>How do fee concessions work?</span><span class="arrow" aria-hidden="true">↗</span></button>
+          </div>
+        </section>
+        <div class="messages" id="messages"></div>
+      </div>
+      <div class="composer-wrap"><form id="chat-form" class="composer"><label class="sr-only" for="question">Your question</label><textarea id="question" name="question" rows="1" maxlength="800" placeholder="Ask a question about student life..." required></textarea><button id="send" type="submit" aria-label="Send question"><span aria-hidden="true">↗</span></button></form><p class="composer-note"><span>GROUNDED IN TWO UNIVERSITY DOCUMENTS</span><span>Always verify important dates and policies.</span></p></div>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
